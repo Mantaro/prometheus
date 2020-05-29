@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Generating nodes: $@"
+echo "Generating nodes: $@" 1>&2
 
 gen_instance() {
   name=$1
