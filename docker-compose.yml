@@ -27,10 +27,8 @@ services:
       - '--web.enable-lifecycle'
     ports:
       - 9090:9090
-      - 9900:9900
-      - 9901:9901
-      - 9902:9902
-      - 9903:9903
+    env_file:
+        - prom-variables.env
 
 volumes:
 #  grafanadata:

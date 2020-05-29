@@ -1,6 +1,6 @@
 # How to configure
 
-Create a file called `.env` with the following contents:
+Create a file called `prom-variables.env` with the following contents:
 
 ```
 MANTARO_IP=<replace me>
