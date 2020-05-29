@@ -20,7 +20,7 @@ gen_job() {
   if [ "$ip" = "host" ]; then
     ip=$(ip route show | awk '/default/ {print $3}')
   fi
-  if [ "$ip" = "" ]; then
+  if [ "$ip" = "none" ]; then
     return 0
   fi
   for port in $(seq $base $(($base + $count - 2))); do
