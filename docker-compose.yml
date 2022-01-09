@@ -26,9 +26,9 @@ services:
       - '--web.enable-admin-api'
       - '--web.enable-lifecycle'
     ports:
-      - 9090:9090
+      - "${BIND_IP:?err}:9090:9090"
     env_file:
-        - prom-variables.env
+      - prom-variables.env
 
 volumes:
 #  grafanadata:
